@@ -18,4 +18,6 @@
 
 <code>celery -A app.celery worker</code>
 
-Запустиь Flask командой flask run.
+Запустиь Flask командой
+
+<code>flask run</code>
