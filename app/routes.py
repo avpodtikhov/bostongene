@@ -26,7 +26,7 @@ def countMD5(self, email, url):
             m.update(data)
         md5 = m.hexdigest()
         if email != None:
-            msg = Message('MD5 hash', sender = 'apodtikhov@gmail.com', recipients = [email])
+            msg = Message('MD5 hash', sender = 'SENDER HERE', recipients = [email])
             msg.body = 'MD5 hash of the file (url = ' + url + ') is ' + str(md5)
             mail.send(msg)
         return {'url' : url, 'md5' : md5}
